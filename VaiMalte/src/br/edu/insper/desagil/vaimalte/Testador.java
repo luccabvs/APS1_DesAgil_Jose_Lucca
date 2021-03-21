@@ -2,11 +2,11 @@ package br.edu.insper.desagil.vaimalte;
 
 public class Testador {
 	public boolean testeA() {
-		Carrinho carrinho_A = new Carrinho(); 
+		Carrinho carrinhoA = new Carrinho(); 
 		
-		Caixa caixa_A = new Caixa();
+		Caixa caixaA = new Caixa();
 	    
-		if(caixa_A.total(carrinho_A) == 0.0) {
+		if(caixaA.total(carrinhoA) == 0.0) {
 			return true;
 		}
 		
@@ -14,15 +14,15 @@ public class Testador {
 	}
 
 	public boolean testeB() {
-		Carrinho carrinho_B = new Carrinho(); 
+		Carrinho carrinhoB = new Carrinho(); 
 		
-		Produto Litrao_do_Quata = new Produto(33, "Litrao_do_Quata", 13.99);
+		Produto litraoQuata = new Produto(33, "litraoQuata", 13.99);
 				
-		carrinho_B.incrementa(Litrao_do_Quata);
+		carrinhoB.incrementa(litraoQuata);
 		
-		Caixa caixa_B = new Caixa();
+		Caixa caixaB = new Caixa();
 		
-		if(caixa_B.total(carrinho_B) == 13.99) {
+		if(caixaB.total(carrinhoB) == 13.99) {
 			return true;
 		}
 		
@@ -30,38 +30,38 @@ public class Testador {
 	}
 
 	public boolean testeC() {
-		Carrinho carrinho_C = new Carrinho(); 
+		Carrinho carrinhoC = new Carrinho(); 
 		
-		Produto Litrao_do_Sujus = new Produto(33, "Litrao_do_Sujus", 15.00);
+		Produto litraoSujus = new Produto(33, "litraoSujus", 15.00);
 				
-		carrinho_C.incrementa(Litrao_do_Sujus);
+		carrinhoC.incrementa(litraoSujus);
 		
-		Caixa caixa_C = new Caixa();
+		Caixa caixaC = new Caixa();
 
-		caixa_C.adiciona_desconto(Litrao_do_Sujus, 30);
+		caixaC.adicionaDesconto(litraoSujus, 30);
 		
-		if(caixa_C.total(carrinho_C) == 10.50) {
+		if(caixaC.total(carrinhoC) == 10.50) {
 			return true;
 		}
 		
 		return false;		}
 
 	public boolean testeD() {
-		Carrinho carrinho_D = new Carrinho(); 
+		Carrinho carrinhoD = new Carrinho(); 
 		
-		Produto Litrao_do_Sujus = new Produto(33, "Litrao_do_Sujus", 15.00);
-		Produto Litrao_do_Quata = new Produto(69, "Litrao_do_Quata", 13.99);
-		Produto Litrao_do_Supra = new Produto(24, "Litrao_do_Supra", 20.00);
+		Produto litraoSujus = new Produto(33, "litraoSujus", 15.00);
+		Produto litraoQuata = new Produto(69, "litraoQuata", 13.99);
+		Produto litraoSupra = new Produto(24, "litraoSupra", 20.00);
 				
-		carrinho_D.incrementa(Litrao_do_Sujus);
-		carrinho_D.incrementa(Litrao_do_Quata);
-		carrinho_D.incrementa(Litrao_do_Supra);
+		carrinhoD.incrementa(litraoSujus);
+		carrinhoD.incrementa(litraoQuata);
+		carrinhoD.incrementa(litraoSupra);
 
-		Caixa caixa_D = new Caixa();
+		Caixa caixaD = new Caixa();
 
-		caixa_D.adiciona_desconto(Litrao_do_Sujus, 40);
+		caixaD.adicionaDesconto(litraoSujus, 40);
 		
-		if(caixa_D.total(carrinho_D) == 42.99) {
+		if(caixaD.total(carrinhoD) == 42.99) {
 			return true;
 			
 			
@@ -71,22 +71,22 @@ public class Testador {
 	}
 
 	public boolean testeE() {
-		Carrinho carrinho_E = new Carrinho(); 
+		Carrinho carrinhoE = new Carrinho(); 
 		
-		Produto Litrao_do_Sujus = new Produto(33, "Litrao_do_Sujus", 15.00);
-		Produto Litrao_do_Quata = new Produto(69, "Litrao_do_Quata", 14.00);
-		Produto Litrao_do_Supra = new Produto(24, "Litrao_do_Supra", 20.00);
+		Produto litraoSujus = new Produto(33, "litraoSujus", 15.00);
+		Produto litraoQuata = new Produto(69, "litraoQuata", 14.00);
+		Produto litraoSupra = new Produto(24, "litraoSupra", 20.00);
 				
-		carrinho_E.incrementa(Litrao_do_Sujus);
-		carrinho_E.incrementa(Litrao_do_Quata);
-		carrinho_E.incrementa(Litrao_do_Supra);
+		carrinhoE.incrementa(litraoSujus);
+		carrinhoE.incrementa(litraoQuata);
+		carrinhoE.incrementa(litraoSupra);
 
-		Caixa caixa_E = new Caixa();
+		Caixa caixaE = new Caixa();
 
-		caixa_E.adiciona_desconto(Litrao_do_Sujus, 40);
-		caixa_E.adiciona_desconto(Litrao_do_Quata, 10);
+		caixaE.adicionaDesconto(litraoSujus, 40);
+		caixaE.adicionaDesconto(litraoQuata, 10);
 		
-		if(caixa_E.total(carrinho_E) == 41.6 ) {
+		if(caixaE.total(carrinhoE) == 41.6 ) {
 			return true;
 	}
 	    return false;

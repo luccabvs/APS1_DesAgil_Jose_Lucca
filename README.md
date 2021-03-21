@@ -1,2 +1,7 @@
-# APS1_DesAgil_Jose_Lucca
-APS1 Desenvolvimento Colaborativo Ágil - Vai Malte
+# APS1 - Desenvolvimento Colaborativo Ágil
+
+## Grupo:
+* José Rafael Martins Fernandes
+* Lucca Barufatti Velini Sanches
+
+

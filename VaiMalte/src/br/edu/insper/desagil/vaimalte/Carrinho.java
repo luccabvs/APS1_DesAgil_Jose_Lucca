@@ -22,8 +22,8 @@ public class Carrinho {
 				break;
 			}
 		}
-		Pedido novo_pedido = new Pedido(produto);
-		this.pedidos.add(novo_pedido);
+		Pedido novoPedido = new Pedido(produto);
+		this.pedidos.add(novoPedido);
 	}
 }
 
