@@ -38,9 +38,4 @@ class TestadorTest {
 	    assertTrue(t.testeE());
 	}
 
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
-
 }
